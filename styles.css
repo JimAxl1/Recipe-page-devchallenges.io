@@ -1,0 +1,371 @@
+*{
+    box-sizing: border-box;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+/*Texts -------------*/
+#text1{
+    font-family: Playfair Display;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#text2{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 500;
+}
+
+#text3{
+    font-family: Playfair Display;
+    font-size: 1.8rem;
+    font-style: normal;
+    font-weight: 700;
+}
+
+#text4{
+    font-family: Playfair Display;
+    font-size: 1.6rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+.text5{
+    font-family: Montserrat;
+    font-size: 1.6rem;
+    font-style: normal;
+    font-weight: 400;
+    grid-column: 2 / 3;
+}
+
+.text6{
+    background-color: #F2994A;
+    border-radius: 6px;
+    color: white;
+    font-family: Playfair Display;
+    font-size: 2.4rem;
+    font-style: normal;
+    font-weight: 700;
+    padding-bottom: 10px;
+    padding-top: 2px;
+    padding-left: 13px;
+    padding-right: 13px;
+    margin: 5px;
+    margin-top: 12px;
+    margin-bottom: auto;
+    grid-column: 1 / 2;
+}
+
+#text7{
+    font-family: Montserrat;
+    font-size: 1.2rem;
+    font-style: italic;
+    font-weight: 400;
+    color: #BDBDBD;
+}
+
+.text8{
+    font-family: Montserrat;
+    font-size: 0.8rem;
+    font-style: normal;
+    font-weight: 700;
+    margin-top: -1px;
+}
+
+.text9{
+    font-family: Montserrat;
+    font-size: 1.0rem;
+    font-style: normal;
+    font-weight: 500;
+}
+
+#text10{
+    font-family: Playfair Display;
+    font-size: 1.8rem;
+    font-style: italic;
+    font-weight: 400;
+}
+
+/* Images ----------------*/
+img{
+    width: 100%;
+    height: auto;
+}
+
+.icons{
+    height: 14.166667938232422px;
+    width: 14.166666984558105px;
+}
+
+#dots{
+    display: none;
+}
+
+/* Containers --------------------- */
+.ingredients{
+    display: grid;
+    grid-template-columns: 30px auto;
+}
+
+.instructions{
+    display: grid;
+    grid-template-columns: 50px auto;
+}
+
+.item3{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    align-content: stretch;
+    align-items: flex-start;
+}
+
+#item4{
+    flex-basis: 100%;
+    align-self: auto;
+}
+
+#item5{
+    flex-basis: 32%;
+    align-self: flex-start;
+}
+
+#item6{
+    flex-basis: 32%;
+    align-self: flex-start;
+}
+
+#item7{
+    flex-basis: 32%;
+    align-self: flex-start;
+}
+/* body containers -------------------*/
+body{
+    display: flex;
+    flex-direction: column;
+}
+
+#body_item1{
+    /* Header */
+    order: 1;
+}
+
+#body_item2{
+    /* Ingredients */
+    order: 3;
+}
+
+#body_item3{
+    /* Instructions */    
+    order: 4;
+}
+
+#body_item4{
+    /* Data */   
+    order: 2;
+}
+
+#body_item5{
+    /* Footer */
+    order: 5;
+    text-align: center;
+}
+
+/* Others ------------------------- */
+input{
+    border: 1px solid #828282;
+    border-radius: 4px;
+    width: 21px;
+    height: 21px;
+    grid-column: 1 / 2;
+}
+
+@media screen and (min-width: 870px) {
+    /* Body containers ------------------ */
+    body{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        align-content: stretch;
+        align-items: flex-start;
+        max-width: 969px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    #body_item1{
+        /* Header */
+        order: 1;
+    }
+    
+    #body_item2{
+        /* Ingredients */
+        order: 2;
+        max-width: 579px;
+    }
+    
+    #body_item3{
+        /* Instructions */    
+        order: 4;
+        max-width: 579px;
+    }
+    
+    #body_item4{
+        /* Data */   
+        order: 3;
+        max-width: 216px;
+        box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+        border-radius: 12px;
+        margin-top: 40px;
+        padding-top: 57px;
+        padding-left: 40px;
+        padding-right: 51px;
+        padding-bottom: 49px;
+    }
+
+    #header_item{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+    }
+
+    /* Container of Data */
+    .item3{
+        /* Data */
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: flex-start;
+        align-content: stretch;
+        align-items: flex-start;
+    }
+
+    #item4{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    
+    #item5{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    
+    #item6{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    
+    #item7{
+        flex-basis: 100%;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: nowrap;
+        margin: 10px;
+    }
+    
+    #body_item5{
+        /* Footer */
+        order: 5;
+        width: 100%;
+    }
+
+    /*Texts -------------------------------------*/
+    #text1{
+        font-family: Playfair Display;
+        font-size: 4.8rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    #text2{
+        font-family: Montserrat;
+        font-size: 1.4rem;
+        font-style: italic;
+        font-weight: 500;
+        max-width: 592px;
+        margin-top: 1px;
+        margin-left: 10px;
+    }
+
+    #text3{
+        font-family: Playfair Display;
+        font-size: 2.4rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    #text4{
+        font-family: Playfair Display;
+        font-size: 1.8rem;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .text5{
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 25px;
+        letter-spacing: 0em;
+        text-align: left;
+    }
+
+    /*The text6 is the same in both designs*/
+    #text7{
+        font-family: Montserrat;
+        font-size: 1.6rem;
+        font-style: italic;
+        font-weight: 400;
+    }
+
+    .text8{
+        font-family: Montserrat;
+        font-size: 1.0rem;
+        font-style: normal;
+        font-weight: 700;
+    }
+
+    .text9{
+        font-family: Montserrat;
+        font-size: 1.4rem;
+        font-style: normal;
+        font-weight: 500;
+    }
+
+    #text_ins{
+        font-family: Playfair Display;
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    /*Others --------------------------------*/
+    .icons{
+        width: 28.33px;
+        height: 28.33px;
+    }
+
+    
+    #dots{
+        display: inline;
+        width: 20px;
+        height: 12px;
+        margin-top: 3px;
+    }
+}
